@@ -1,6 +1,6 @@
 ## midi-instrument
 
-Return an object of music notes for given Midi instrument
+Return an object of music notes for given [MidiJS](https://github.com/mudcube/MIDI.js) instrument. 
 
 ```js
 midi = require('midi-sdk')('path/to/midi', ['acoustic_grand_piano'])
