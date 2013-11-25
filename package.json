@@ -1,0 +1,25 @@
+{
+  "name": "midi-instrument",
+  "version": "0.0.0",
+  "description": "Return an object of music notes for given Midi instrument",
+  "main": "index.js",
+  "scripts": {
+    "test": "fox"
+  },
+  "devDependencies": {
+    "prova": "*",
+    "midi-sdk": "*"
+  },
+  "keywords": [
+    "midi",
+    "music",
+    "note",
+    "sdk"
+  ],
+  "repository": {
+    "url": "git@github.com:azer\/midi-instrument.git",
+    "type": "git"
+  },
+  "author": "Azer Ko\u00e7ulu <azer@kodfabrik.com>",
+  "license": "BSD"
+}
