@@ -8,10 +8,10 @@ instrument = require('midi-instrument')
 
 piano = instrument(midi, 0, 0)
 
-piano.c()
+piano.c(1, 128) // delay, velocity
 // plays Do / C
 
-piano['la#1']
+piano['la#1']()
 // plays A# / La# 1
 
 piano.mi3()
