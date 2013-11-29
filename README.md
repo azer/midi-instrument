@@ -6,7 +6,7 @@ Return an object of music notes for given [MidiJS](https://github.com/mudcube/MI
 midi = require('midi-sdk')('path/to/midi', ['acoustic_grand_piano'])
 instrument = require('midi-instrument')
 
-piano = instrument(midi, 0, 0)
+piano = instrument(midi, 0, 0) // channel, program
 
 piano.c(1, 128) // delay, velocity
 // plays Do / C
