@@ -1,10 +1,7 @@
-var channelCounter = 0;
-
 module.exports = instrument;
 
-function instrument (sdk, program) {
+function instrument (sdk, channel, program) {
   var api = {};
-  var channel = channelCounter++;
 
   var i = 100;
   while (i--) {
