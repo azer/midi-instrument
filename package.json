@@ -1,6 +1,6 @@
 {
   "name": "midi-instrument",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Return an object of music notes for given Midi instrument",
   "main": "index.js",
   "scripts": {

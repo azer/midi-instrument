@@ -1,12 +1,19 @@
+var channelCounter = 0;
+
 module.exports = instrument;
 
-function instrument (sdk, channel, program) {
+function instrument (sdk, program) {
   var api = {};
+  var channel = channelCounter++;
 
   var i = 100;
   while (i--) {
     newNote(sdk, api, channel, i);
   }
+
+  sdk(function () {
+    MIDI.programChange(channel, program);
+  });
 
   return api;
 }

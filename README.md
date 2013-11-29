@@ -1,12 +1,14 @@
 ## midi-instrument
 
-Return an object of music notes for given [MidiJS](https://github.com/mudcube/MIDI.js) instrument. 
+Return an object of music notes for given [MidiJS](https://github.com/mudcube/MIDI.js) instrument.
 
 ```js
-midi = require('midi-sdk')('path/to/midi', ['acoustic_grand_piano'])
+midi = require('midi-sdk')('path/to/midi', ['acoustic_grand_piano', 'flute'])
 instrument = require('midi-instrument')
 
-piano = instrument(midi, 0, 0) // channel, program
+piano = instrument(midi, 0)
+flute = instrument(midi, 73)
+>>>>>>> document & test multiple instruments
 
 piano.c(1, 128) // delay, velocity
 // plays Do / C
@@ -14,7 +16,7 @@ piano.c(1, 128) // delay, velocity
 piano['la#1']()
 // plays A# / La# 1
 
-piano.mi3()
+flute.mi3()
 // plays mi3
 ```
 
