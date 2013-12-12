@@ -8,7 +8,6 @@ instrument = require('midi-instrument')
 
 piano = instrument(midi, 0)
 flute = instrument(midi, 73)
->>>>>>> document & test multiple instruments
 
 piano.c(1, 128) // delay, velocity
 // plays Do / C
